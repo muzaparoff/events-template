@@ -5,7 +5,10 @@
         <div class="row">
           <div class="col-md-2 col-sm-3">
             <h1 class="logo">
-            <a href="index.html" title="Primo"><img class="img-responsive" src="images/brand.png" alt="OnEvent"></a></h1>
+              <a href="index.html" title="Primo">
+                <%= image_tag 'brand.png', class: "img-responsive" %>
+              </a>
+            </h1>
           </div>
           <div class="col-md-10 col-sm-9"> 
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -34,13 +37,13 @@
   <div id="event-slider" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner"> 
       <!-- begin carousel-slide -->
-      <div class="item active"> <img src="images/slider/slide1.jpg" alt="slide" class="img-responsive"> </div>
+      <div class="item active"> <img src="/assets/slider/slide1.jpg" alt="slide" class="img-responsive"> </div>
       <!-- end carousel-slide --> 
       <!-- begin carousel-slide -->
-      <div class="item"> <img src="images/slider/slide2.jpg" alt="slide" class="img-responsive"> </div>
+      <div class="item"> <img src="/assets/images/slider/slide2.jpg" alt="slide" class="img-responsive"> </div>
       <!-- end carousel-slide --> 
       <!-- begin carousel-slide -->
-      <div class="item"> <img src="images/slider/slide3.jpg" alt="slide" class="img-responsive"> </div>
+      <div class="item"> <img src="/assets/images/slider/slide3.jpg" alt="slide" class="img-responsive"> </div>
       <!-- end carousel-slide --> 
     </div>
     <!-- end carousel-inner --> 
