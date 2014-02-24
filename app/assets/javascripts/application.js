@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap/tooltip
 //= require bootstrap/bootstrap
-//= require bootstrap.min
 //= require custom
 //= require directions
 //= require jquery.countdown

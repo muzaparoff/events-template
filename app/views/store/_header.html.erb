@@ -5,9 +5,7 @@
         <div class="row">
           <div class="col-md-2 col-sm-3">
             <h1 class="logo">
-              <a href="index.html" title="Primo">
-                <%= image_tag 'brand.png', class: "img-responsive" %>
-              </a>
+              <%= link_to image_tag('brand.png', class: "img-responsive"), controller: "event", action: "index" %>
             </h1>
           </div>
           <div class="col-md-10 col-sm-9"> 

@@ -15,5 +15,6 @@
  *= require style
  *= require transitions
  *= require main 
+ *= require fonts/font-awesome/css/font-awesome.min
  *= require_self
  */

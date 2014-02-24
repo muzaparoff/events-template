@@ -4,9 +4,12 @@
       <div class="navigation">
         <div class="row">
           <div class="col-md-2 col-sm-3">
-              <h1 class="logo"><a href="index.html" title="Primo">
-               <%= image_tag 'brand.png', class: "img-responsive" %>
-              </a></h1>
+              <h1 class="logo">
+
+                <!-- <a href="index.html" title="Primo"> -->
+                  <%= link_to image_tag('brand.png', class: "img-responsive"), controller: "store", action: "index" %>
+                <!-- </a> -->
+              </h1>
           </div>
           <div class="col-md-10 col-sm-9"> 
             <!-- Brand and toggle get grouped for better mobile display -->
