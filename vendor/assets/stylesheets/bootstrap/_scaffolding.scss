@@ -56,13 +56,13 @@ a {
 }
 
 
-// img
+// Images
 
 img {
   vertical-align: middle;
 }
 
-// Responsive img (ensure img don't scale beyond their parents)
+// Responsive images (ensure images don't scale beyond their parents)
 .img-responsive {
   @include img-responsive();
 }
