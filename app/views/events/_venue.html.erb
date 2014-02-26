@@ -13,12 +13,11 @@
               <h3>Event <span>Location</span></h3>
               <ul class="address">
                 <li> <i class="fa fa-map-marker"></i> <strong>Visit Us</strong><br>
-                  123 Main Street<br>
-                  San Francisco, CA 94105, USA </li>
+                  <%= @event.location %><br>
                 <li> <i class="fa fa-phone"></i> <strong>Call Us</strong><br>
-                  310.55.1213 </li>
+                  <%= @event.phone %></li>
                 <li> <i class="fa fa-envelope"></i> <strong>Email Us</strong><br>
-                  <a href="mailto:info@yourdomain.com">info@yourdomain.com</a> </li>
+                  <a href="mailto:info@yourdomain.com"><%= @event.email %></a> </li>
               </ul>
             </div>
           </div>

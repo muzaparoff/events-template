@@ -1,0 +1,32 @@
+<nav class="navbar navbar-inverse" role="navigation">
+  <p class="navbar-text navbar-right">
+    <%= link_to "Signed in as" %> 
+  <a href="#" class="navbar-link">Mark Otto</a></p>
+</nav>
+    
+  <div class="panel panel-default">
+  <div class="panel-heading">
+    <h1><%= pluralize(@events.size, 'Event') %></h1>
+  </div>
+    <% @events.each do |event| %>
+    <article>
+    <header>Name: <%= link_to(event.name, "events/#{event.id}") %></header>
+
+    <p>About:<%= event.about %></p>
+    <p>Description:<%= truncate(event.description, length: 15, separator: ' ') %></p>
+    <table class="table">
+      <tr><th>Where: </th><td><%= event.location %></td></tr>
+      <tr><th>Speakers: </th><td><%= event.speakers %></td></tr>   <tr><th>Email:</th><td><%= event.email %></td></tr>
+      <tr><th>Phone number: </th><td><%= number_to_phone(event.phone) %></td></tr>     
+      <tr><th>When:</th><td> <%= event.started_at %></td></tr>    
+    </table>
+  
+    <ol class="breadcrumb">
+      <li><%= link_to 'Show', event %></li>
+      <li><%= link_to 'Edit', edit_event_path(event) %></li>
+      <li><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you   sure?' } %></li>  
+      <li><%= link_to '  New Event', new_event_path %></li>
+    </ol>
+    <% end %>
+  </article>
+</div>

@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Speakers:</strong>
+  <%= @event.speakers %>
+</p>
+
+<p>
+  <strong>Started at:</strong>
+  <%= @event.started_at %>
+</p>
+<ol class="breadcrumb">
+  <li><%= link_to "All Events", events_path %></li>
+  <li><%= link_to 'Edit', edit_event_path(@event) %></li>
+  <li><%= link_to 'Back', events_path %></li>
+</ol>
+
+<!--BEGIN-HEADER-->
+<%= render 'events/header' %>
+<!-- END-HEADER -->
+ 
+<!--BEGIN-INTRO-BOX-->
+<%= render 'events/introbox' %>
+
+<!--END-INTRO-BOX--> 
+
+<!--BEGIN-SCHEDULE-->
+<%= render 'events/schedule' %>
+<!--END-SCHEDULE--> 
+
+<!--BEGIN-SPEAKERS-->
+<%= render 'events/speakers' %>
+<!--END-SPEAKERS--> 
+
+<!--BEGIN-PARTNERS-->
+<% render 'events/partners' %>
+<!--END-PARTNERS--> 
+
+<!--BEGIN-FAQ-->
+<% render 'events/faq' %>
+<!--END-FAQ--> 
+
+<!--BEGIN-VENUE-->
+<%= render 'events/venue' %>
+<!--END-VENUE--> 
+
+<!--BEGIN-FOOTER-->
+<%= render 'events/footer' %>

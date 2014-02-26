@@ -6,9 +6,10 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
-# gem 'activeadmin'
+gem 'activeadmin', github: 'gregbell/active_admin'
 gem "bcrypt-ruby", :require => "bcrypt"
 gem 'devise'
+gem "meta_search"
 
 group :production do
 	gem "pg"

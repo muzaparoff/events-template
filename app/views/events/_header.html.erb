@@ -4,12 +4,9 @@
       <div class="navigation">
         <div class="row">
           <div class="col-md-2 col-sm-3">
-              <h1 class="logo">
-
-                <!-- <a href="index.html" title="Primo"> -->
-                  <%= link_to image_tag('brand.png', class: "img-responsive"), controller: "store", action: "index" %>
-                <!-- </a> -->
-              </h1>
+            <h1 class="logo">
+              <%= link_to image_tag('brand.png', class: "img-responsive"), controller: "events", action: "index" %>
+            </h1>
           </div>
           <div class="col-md-10 col-sm-9"> 
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,5 +32,28 @@
     </div>
     <!-- end container --> 
   </header>
-  
+  <div id="event-slider" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner"> 
+      <!-- begin carousel-slide -->
+      <div class="item active">
+       <%= image_tag 'slider/slide1.jpg', class: "img-responsive" %>
+      </div>
+      <!-- end carousel-slide --> 
+      <!-- begin carousel-slide -->
+      <div class="item">
+        <%= image_tag 'slider/slide2.jpg', class: "img-responsive" %>
+      </div>
+      <!-- end carousel-slide --> 
+      <!-- begin carousel-slide -->
+      <div class="item">
+        <%= image_tag 'slider/slide3.jpg', class: "img-responsive" %>
+      </div>
+      <!-- end carousel-slide --> 
+    </div>
+    <!-- end carousel-inner --> 
+    
+    <!-- Controls --> 
+    <a class="left carousel-control" href="#event-slider" data-slide="prev"> <i class="fa fa-chevron-left"></i></a>
+    <a class="right carousel-control" href="#event-slider" data-slide="next"> <i class="fa fa-chevron-right"></i></a>
+  </div>
 </section>
