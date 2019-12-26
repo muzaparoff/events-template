@@ -16,6 +16,8 @@ group :production do
 	gem 'rails_12factor'
 end
 
+gem "rack", ">= 1.6.12"
+
 gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails"
